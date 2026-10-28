@@ -518,10 +518,10 @@
               <line x1="${cX}" y1="122" x2="${cX}" y2="156" stroke="${theme.line}" stroke-width="2" marker-end="url(#arrow)" />
               <!-- Diamond to Left (ДА) -->
               <path d="M ${cX - 90} 190 L ${leftX} 190 L ${leftX} 240" fill="none" stroke="${theme.line}" stroke-width="2" marker-end="url(#arrow)" class="${step === 3 && isLeft ? 'path-active':''}" />
-              <text x="${cX - 55}" y="180" fill="${theme.yesText}" font-size="12" font-weight="700">ДА</text>
+              <text x="${cX - 115}" y="182" text-anchor="middle" fill="${theme.yesText}" font-size="12" font-weight="700">ДА</text>
               <!-- Diamond to Right (НЕ) -->
               <path d="M ${cX + 90} 190 L ${rightX} 190 L ${rightX} 240" fill="none" stroke="${theme.line}" stroke-width="2" marker-end="url(#arrow)" class="${step === 3 && !isLeft ? 'path-active':''}" />
-              <text x="${cX + 40}" y="180" fill="${theme.noText}" font-size="12" font-weight="700">НЕ</text>
+              <text x="${cX + 115}" y="182" text-anchor="middle" fill="${theme.noText}" font-size="12" font-weight="700">НЕ</text>
               <!-- From outputs to Junction -->
               <path d="M ${leftX} 276 L ${leftX} 340 L ${cX} 340" fill="none" stroke="${theme.line}" stroke-width="2" />
               <path d="M ${rightX} 276 L ${rightX} 340 L ${cX} 340" fill="none" stroke="${theme.line}" stroke-width="2" />
